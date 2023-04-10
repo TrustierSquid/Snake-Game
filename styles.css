@@ -17,18 +17,18 @@ body {
     border: 1px solid #999;
     padding: 0.1rem;
     position: relative;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     border-radius: 0.5rem;
 }
 
 #player {
     height: 50px;
-    width: 10px;
-    background-color: white;
-    border-radius: 10%;
+    width: 50px;
+    /* border-right: 5px solid white; */
+    background-color: red;
+    border-radius: 50%;
     position: absolute;
     transition: 400ms;
-      
 }
 
 /* FOR SELECTION MENU */
@@ -82,7 +82,8 @@ h2, p {
 
 .pebble-dressing {
     background-color: aqua;
-    
+    border-radius: 1rem;
+    /* position: absolute; */
 }
 
 

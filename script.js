@@ -17,20 +17,19 @@ window.addEventListener("load", () => {
 
 // animtaion for when the player goes horizonally or vertically across the board
 function shapeShift() {
-    player.style.width = "90px";
-    player.style.height = "10px";
+    
 
-    // when the player going horizontally across the board
+    // when the player going vertically across the board
     window.addEventListener("keydown", (e) => {
         let key = e.key;
         switch (key) {
             case "s":
-                player.style.width = "10px";
-                player.style.height = "90px";
+                
+                
                 break;
             case "w":
-                player.style.width = "10px";
-                player.style.height = "90px";
+                
+                break;
         }
     })
 }
@@ -47,21 +46,24 @@ window.addEventListener('keydown', (e) => {
             player.style.left =  parseInt(player.style.left) - pos + 'px';
             // console.log("moving left")
             shapeShift();
-
+            
+            
             break;
-
+            
         // going right
         case "d":
             player.style.left =  parseInt(player.style.left) + pos + 'px';
             // console.log("moving right")
             shapeShift();
+          
             break;
-
-        // going up
+            
+            // going up
         case "w":
             player.style.top = parseInt(player.style.top) - pos + 'px';
             // console.log("moving up")
             shapeShift();
+           
 
             break;
 
@@ -82,23 +84,39 @@ window.addEventListener('keydown', (e) => {
 // GAME BOARD IS 400 x 900
 function pebbleSpawning(){
     
-    function spawnIn(){
+    function creatingPebbles(){
         let newPebble = document.createElement("div");
         newPebble.classList.add("pebble-dressing");
         
         // the size of the pebble
-        newPebble.style.height = Math.ceil(Math.random() * 60)
-        newPebble.style.width = newPebble.style.height;
-    }
-    
-    // appending to gameBoard
-    gameBoard.appendChild(newPebble);
+        let randomSize = Math.ceil(Math.random() * 20)
+        newPebble.style.height = randomSize + "px";
+        newPebble.style.width = randomSize + "px";
+        newPebble.style.position = "absolute";
+
+        // appending to gameBoard
+        gameBoard.appendChild(newPebble);
+
+        // pebble Positioning
+        let randomPositionHeight = Math.floor(Math.random() * 400)
+        let randomPositionWidth = Math.floor(Math.random() * 900)
+
+        newPebble.style.top = parseInt(randomPositionHeight) + "px";
+        newPebble.style.left = parseInt(randomPositionWidth) + "px";
+        
+        function collisions(){
+            WTF??????????????????????????????????????
+        }
+
+        collisions()
+    }    
     
     setInterval(()=> {
-        let spawnHeight = Math.ceil(Math.random() * 400);
-        let spawnWidth = Math.ceil(Math.random() * 900);
-        
-        spawnIn()
+
+        // spawning Pebbles
+        creatingPebbles()
 
     }, 2000)
 }
+
+// pebbleSpawning()
