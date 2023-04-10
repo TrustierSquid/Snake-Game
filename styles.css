@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+body {
+    background-color: #111;
+}
+
+#game-board {
+    height: 400px;
+    width: 900px;
+    background-color: #222;
+    margin: 2% auto;
+    border: 1px solid #999;
+    padding: 0.1rem;
+    position: relative;
+    /* overflow-x: hidden; */
+    border-radius: 0.5rem;
+}
+
+#player {
+    height: 50px;
+    width: 10px;
+    background-color: white;
+    border-radius: 10%;
+    position: absolute;
+    transition: 400ms;
+      
+}
+
+/* FOR SELECTION MENU */
+
+main {
+    height: 500px;
+    width: 900px;
+    background-color: #444;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* CHOOSIUNG A SNAKE COLOR */
+
+#color-container {
+    background-color: #333;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 200px;
+    width: auto;
+}
+
+
+#color-container > button {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    transition: 250ms;
+}
+
+/* TUTORIAL */
+
+#how-to-play {
+    color: white;
+    padding: 1.5rem;
+}
+
+h2, p {
+    line-height: 1.5;
+}
+
+
+/* PEBBLE SPAWNING  */
+
+.pebble-dressing {
+    background-color: aqua;
+    
+}
+
+
+
+
+#color-container > button:focus {
+    opacity: 0.2;
+}
+
+#color-container > button:nth-of-type(1){
+    background-color: red;
+}
+
+#color-container > button:nth-of-type(2){
+    background-color: blue;
+}
+
+#color-container > button:nth-of-type(3){
+    background-color: green;
+}
+
+#color-container > button:nth-of-type(4){
+    background-color: black;
+}
+
+#color-container > button:nth-of-type(5){
+    background-color: purple;
+}
+
+#color-container > button:nth-of-type(6){
+    background-color: salmon;
+}
