@@ -15,63 +15,52 @@ window.addEventListener("load", () => {
 
 })
 
-// animtaion for when the player goes horizonally or vertically across the board
-function shapeShift() {
-    
 
-    // when the player going vertically across the board
-    window.addEventListener("keydown", (e) => {
-        let key = e.key;
-        switch (key) {
-            case "s":
-                
-                
-                break;
-            case "w":
-                
-                break;
-        }
-    })
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // SNAKE  MOVEMENT
-window.addEventListener('keydown', (e) => {
+window.addEventListener('keypress', (e) => {
     
     let key = e.key;
-    let pos =  5;
+
+    // PLAYER SPEED
+    let pos =  30;
     
     switch (key) {
         // going left
         case "a":
             player.style.left =  parseInt(player.style.left) - pos + 'px';
-            // console.log("moving left")
-            shapeShift();
             
-            
-            break;
-            
+            break;      
+
         // going right
         case "d":
             player.style.left =  parseInt(player.style.left) + pos + 'px';
-            // console.log("moving right")
-            shapeShift();
-          
+            
+
             break;
             
             // going up
         case "w":
             player.style.top = parseInt(player.style.top) - pos + 'px';
-            // console.log("moving up")
-            shapeShift();
-           
-
+            
             break;
 
         // going down
         case "s":
             player.style.top = parseInt(player.style.top) + pos + 'px';
-            // console.log("moving down")
-            shapeShift();
+            
 
             break;
         default:
@@ -120,3 +109,52 @@ function pebbleSpawning(){
 }
 
 // pebbleSpawning()
+
+
+// CHOOSING SNAKE COLOR
+
+function colorSelection() {
+    const colorChoices = document.querySelectorAll('[data-color-button]');
+
+    window.addEventListener('click', (button)=> {
+        switch (button.target) {
+            case colorChoices[0]:
+                player.style.backgroundColor = "red";
+                break;
+
+            case colorChoices[1]:
+                player.style.backgroundColor = "blue";
+                break;
+
+            case colorChoices[2]:
+                player.style.backgroundColor = "green";
+                break;
+
+            case colorChoices[3]:
+                player.style.backgroundColor = "black";
+                break;
+
+            case colorChoices[4]:
+                player.style.backgroundColor = "purple";
+                break;
+
+            case colorChoices[5]:
+                player.style.backgroundColor = "salmon";
+                break;
+            default:
+                return
+        }
+            
+        console.log("Changed color")
+    
+    })
+
+    // TURNS THE SNAKE INTO WHATEVER COLOR THE USER  CHOOSES 
+
+}
+
+colorSelection()
+
+
+
+console.log(player)
