@@ -131,7 +131,7 @@ function colorSelection() {
                 break;
 
             case colorChoices[3]:
-                player.style.backgroundColor = "black";
+                player.style.backgroundColor = "#d4af37";
                 break;
 
             case colorChoices[4]:
