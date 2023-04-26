@@ -66,6 +66,10 @@ main {
     transition: 250ms;
 }
 
+.colors {
+    cursor: pointer;
+}
+
 /* TUTORIAL */
 
 #how-to-play {
