@@ -17,18 +17,6 @@ window.addEventListener("load", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // SNAKE  MOVEMENT
 window.addEventListener('keypress', (e) => {
     
@@ -108,7 +96,7 @@ function pebbleSpawning(){
     }, 2000)
 }
 
-// pebbleSpawning()
+pebbleSpawning()
 
 
 // CHOOSING SNAKE COLOR
@@ -158,3 +146,156 @@ colorSelection()
 
 
 console.log(player)
+
+// github copilot shit idk, sort through this
+
+// // SNAKE GROWING
+// function snakeGrowing() {
+//     let snakeLength = 0;
+//     let snakeSize = 1;
+//     let snakeBody = [];
+
+//     function growing() {
+//         snakeLength += snakeSize;
+//         snakeBody.push(snakeLength)
+//         console.log(snakeLength)
+//     }
+
+//     growing()
+// }
+
+// snakeGrowing()
+
+// // SNAKE COLLISIONS
+// function snakeCollisions() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeCollisions()
+
+// // SNAKE SPEED
+// function snakeSpeed() {
+//     let snakeSpeed = 0;
+
+//     // if the snake eats a pebble, the snake will grow and the speed will increase
+//     if (snakeGrowing()) {
+//         snakeSpeed += 1;
+//     }
+// }
+
+// snakeSpeed()
+
+// // SNAKE SCORE
+// function snakeScore() {
+//     let snakeScore = 0;
+
+//     // if the snake eats a pebble, the snake will grow and the score will increase
+//     if (snakeGrowing()) {
+//         snakeScore += 1;
+//     }
+// }
+
+// snakeScore()
+
+// // SNAKE GAME OVER
+// function snakeGameOver() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameOver()
+
+// // SNAKE GAME RESET
+// function snakeGameReset() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameReset()
+
+// // SNAKE GAME START
+// function snakeGameStart() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameStart()
+
+
+// // SNAKE GAME PAUSE
+// function snakeGamePause() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGamePause()
+
+// // SNAKE GAME RESUME
+
+// function snakeGameResume() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameResume()
+
+// // SNAKE GAME RESTART
+
+// function snakeGameRestart() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameRestart()
+
+// // SNAKE GAME QUIT
+
+// function snakeGameQuit() {
+//     let snakeHead = document.getElementById("player");
+//     let snakeBody = document.querySelectorAll(".snake-body");
+
+//     // if the snake head and the snake body collide
+//     if (snakeHead.style.left === snakeBody.style.left && snakeHead.style.top === snakeBody.style.top) {
+//         console.log("collided")
+//     }
+// }
+
+// snakeGameQuit()
+
+
