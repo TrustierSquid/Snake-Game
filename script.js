@@ -16,19 +16,6 @@ window.addEventListener("load", () => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // SNAKE  MOVEMENT
 window.addEventListener('keypress', (e) => {
     
