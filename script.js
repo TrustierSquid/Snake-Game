@@ -1,7 +1,7 @@
 // Jello snake
 // by  Samuel hunt
 
-let player = document.getElementById("player");
+let player = document.getElementById("snake");
 const gameBoard = document.getElementById("game-board");
 
 window.addEventListener("load", () => {
@@ -96,7 +96,7 @@ function pebbleSpawning(){
     }, 2000)
 }
 
-pebbleSpawning()
+// pebbleSpawning()
 
 
 // CHOOSING SNAKE COLOR
