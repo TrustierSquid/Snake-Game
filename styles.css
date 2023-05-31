@@ -21,14 +21,24 @@ body {
     border-radius: 0.5rem;
 }
 
-#player {
-    height: 50px;
-    width: 50px;
+#snake {
+    height: 25px;
+    width: 25px;
     /* border-right: 5px solid white; */
     background-color: red;
-    border-radius: 50%;
+    border-radius: 25%;
     position: absolute;
     transition: 400ms;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
 }
 
 /* FOR SELECTION MENU */
@@ -66,6 +76,10 @@ main {
     transition: 250ms;
 }
 
+.colors {
+    cursor: pointer;
+}
+
 /* TUTORIAL */
 
 #how-to-play {
@@ -86,11 +100,22 @@ h2, p {
     /* position: absolute; */
 }
 
-
+@keyframes button-focus {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 #color-container > button:focus {
-    opacity: 0.2;
+    animation: button-focus 500ms ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 #color-container > button:nth-of-type(1){
@@ -106,7 +131,7 @@ h2, p {
 }
 
 #color-container > button:nth-of-type(4){
-    background-color: black;
+    background-color: #d4af37;
 }
 
 #color-container > button:nth-of-type(5){
